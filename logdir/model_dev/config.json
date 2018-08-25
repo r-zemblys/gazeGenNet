@@ -1,0 +1,31 @@
+{
+    "data_train": "data.unpaired_clean_augment.pkl",
+    "seq_len": 100,
+    "split_seqs": true, 
+    "events": [1, 2, 3],
+    "augment": true,
+    "augment_noise": [0, 0.005, 0.005],
+    "gaze_scale": 1.0,
+    "fs": 500,
+    "max_fix_len": 0.5,
+    
+    "num_epochs": 100000, 
+    "num_steps": 2000, 
+    "save_every": 250, 
+    "info_every": 10, 
+    "batch_size": 50,
+    "max_to_keep": 1,
+    "per_process_gpu_memory_fraction": 0.1,
+    
+    "model": "lstm",
+    "num_layers": 3,
+    "rnn_size": 128, 
+    "nmixtures": 20,
+    "grad_clip": 10.0,
+    "keep_prob": 0.75,
+     
+    "learning_rate": 0.001,
+    "optimizer": "rmsprop",
+    "decay": 0.9,
+    "momentum": 0.9
+}
